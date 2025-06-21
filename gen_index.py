@@ -29,6 +29,7 @@ def create_and_save_index(json_path, index_path):
         device = "cuda"
     else:
         device = "cpu"
+    print(f"Device: {device}")
     model = SentenceTransformer("all-MiniLM-L12-v2", device=device)
     embeddings = model.encode(texts, show_progress_bar=True)
     index = {"embeddings": embeddings, "data": data}
