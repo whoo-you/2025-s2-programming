@@ -10,8 +10,6 @@ dependencies = [
     "ipykernel>=6.29.5",
     "markupsafe==3.0.2",
     "mecab>=0.996.11",
-    "numpy>=2.0.0",
-    "pandas>=2.3.0",
     "requests>=2.25.3",
     "scikit-learn>=1.7.0",
     "sentence-transformers>=4.1.0",
