@@ -1,0 +1,28 @@
+[project]
+name = "2025-s2-programming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "bottle>=0.13.3",
+    "ipykernel>=6.29.5",
+    "markupsafe==3.0.2",
+    "mecab>=0.996.11",
+    "numpy>=2.0.0",
+    "pandas>=2.3.0",
+    "requests>=2.25.3",
+    "scikit-learn>=1.7.0",
+    "sentence-transformers>=4.1.0",
+    "torch==2.7.1+cu128",
+]
+
+[tool.uv.sources]
+torch = { index = "torch-cuda" }
+torchvision = { index = "torch-cuda" }
+
+[[tool.uv.index]]
+name = "torch-cuda"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
